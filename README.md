@@ -1,17 +1,31 @@
 # Forecaster
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+Angular 2 SPA displaying the 5 day weather forecast for a location of your choice. 
+This project was generated with [angular-cli](https://github.com/angular/angular-cli).
+[ng2-bootstrap](http://valor-software.com/ng2-bootstrap) was used for styling.
+[openweathermap](http://openweathermap.org/forecast5) API was used to retrieve the current 5 day weather forecast.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Demo
 
-## Code scaffolding
+Online demo (deployed as a docker image with Docker Cloud to AWS) is available here [forecaster-demo](https://github.com/angular/angular-cli)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+# Installation
 
+- Using npm 
+
+Run the foillowing commands:
+
+    npm install -g angular-cli
+    npm install
+
+Then run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    
+- Using Docker
+Run `docker up` to build and run application.
+   
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
@@ -22,10 +36,17 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
-## Deploying to GitHub Pages
+## Extras
+The CityLocator typeahead component allows to retrive the 5-day weather forecast for a custom location (picked up from a hardcoded and short list of cities/regions).
+CityList service retrives the OpenWeather city list (more than 200k items). Although it was not fully implemented and integrated with CityLocator component.  
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+## What Could be done with more time
 
-## Further help
+ - CityLocator typeahead component 
+   A bit of tweaking is required to syncronise it with CityList service to get it responsive. 
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ - Proper Testing. 
+ As it was not BDD exercise it was just writing simple features. All .spec test files were generated with ng cli and some would fail after components modifications.
+ 
+ 
+ 
