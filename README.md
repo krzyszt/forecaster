@@ -5,7 +5,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 [ng2-bootstrap](http://valor-software.com/ng2-bootstrap) was used for styling.
 [openweathermap](http://openweathermap.org/forecast5) API was used to retrieve the current 5 day weather forecast.
 
-![Screen Shot](https://raw.githubusercontent.com/krzyszt/forecaster/master/img/img.png)
+![Screen Shot](https://raw.githubusercontent.com/krzyszt/forecaster/tree/master/img/img.png)
 
 ## Demo
 
