@@ -4,19 +4,28 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { AlertModule } from 'ng2-bootstrap';
+import { TypeaheadModule } from 'ng2-bootstrap';
+import { CityLocatorComponent } from './city-locator/city-locator.component';
+import { ForecastService } from "./forecast.service";
+import { CityListService } from "./city-list.service";
+import { ForecastItemComponent } from './forecast-item/forecast-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CityLocatorComponent,
+    ForecastItemComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule.forRoot()
+    TypeaheadModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    ForecastService,
+    CityListService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
