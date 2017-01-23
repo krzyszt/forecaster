@@ -1,5 +1,31 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+  <h1>
+    Weather <small> {{ homeCity }}</small>
+  </h1>
 
-<alert type="success">hello</alert>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Find a forecast for</h3>
+        </div>
+        <div class="panel-body">
+          <app-city-locator (selectCity)="selectCity($event)"></app-city-locator>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="loaded">
+    <div class="col-sm-2" *ngFor="let day of days; let dayIndex = index;">
+      <div class="well">
+        <h1> {{ ( dayIndex != 0) ? dayList[dayIndex] : 'Today'}} </h1>
+        <h2> {{ day[0].dt_txt | date }} </h2>
+      </div>
+      <forecast-item *ngFor="let item of day" [item]="item"></forecast-item>
+    </div>
+  </div>
+</div>
+
+
+
