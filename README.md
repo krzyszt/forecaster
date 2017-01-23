@@ -5,8 +5,6 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 [ng2-bootstrap](http://valor-software.com/ng2-bootstrap) was used for styling.
 [openweathermap](http://openweathermap.org/forecast5) API was used to retrieve the current 5 day weather forecast.
 
-![Screen Shot](https://raw.githubusercontent.com/krzyszt/forecaster/tree/master/img/img.png)
-
 ## Demo
 
 Online demo (deployed as a docker image with Docker Cloud to AWS) is available here NOT COMPLETED YET
@@ -24,7 +22,7 @@ Then run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The 
     
 - Using Docker
   NOT COMPLETED
-````
+  
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
