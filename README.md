@@ -7,7 +7,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 ## Demo
 
-Online demo (deployed as a docker image with Docker Cloud to AWS) is available here [forecaster-demo](https://github.com/angular/angular-cli)
+Online demo (deployed as a docker image with Docker Cloud to AWS) is available here NOT COMPLETED YET
 
 # Installation
 
@@ -21,8 +21,8 @@ Run the foillowing commands:
 Then run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
     
 - Using Docker
-Run `docker up` to build and run application.
-   
+  NOT COMPLETED
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
@@ -37,16 +37,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Extras
-The CityLocator typeahead component allows to retrive the 5-day weather forecast for a custom location (picked up from a hardcoded and short list of cities/regions).
-CityList service retrives the OpenWeather city list (more than 200k items). Although it was not fully implemented and integrated with CityLocator component.  
+Use the CityLocator typeahead component to select a custom town or region and make async calls to retrieve the 5-day weather forecast for that location.
+Available locations are limited  to a short and hardcoded list of cities/regions.
+CityList service retrives the OpenWeather city list (more than 200k items). It is not fully implemented and not integrated with the CityLocator component.  
 
 ## What Could be done with more time
 
  - CityLocator typeahead component 
-   A bit of tweaking is required to syncronise it with CityList service to get it responsive. 
+   A bit of tweaking is required to synchronise the component with CityList service to get it responsive. 
 
  - Proper Testing. 
  As it was not BDD exercise it was just writing simple features. All .spec test files were generated with ng cli and some would fail after components modifications.
  
+ - Docker Image, CI & CD with Docker Cloud & AWS
+ I have not completed setting CI & CD with Docker, Docker Cloud & AWS as I used 4 hrs time slot.
  
  
