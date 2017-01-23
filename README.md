@@ -5,6 +5,8 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 [ng2-bootstrap](http://valor-software.com/ng2-bootstrap) was used for styling.
 [openweathermap](http://openweathermap.org/forecast5) API was used to retrieve the current 5 day weather forecast.
 
+Screen Shot 
+
 ## Demo
 
 Online demo (deployed as a docker image with Docker Cloud to AWS) is available here NOT COMPLETED YET
