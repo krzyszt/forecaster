@@ -1,0 +1,10 @@
+<div class="well">
+  <h3> {{ item.dt_txt | date: 'shortTime'}} </h3>
+
+  <div>
+    <h4>{{ item.weather[0].main}} <small> {{ item.weather[0].description }}</small></h4>
+  </div>
+  <div> Temp: {{ item.main.temp - 273.15 | number:'1.0-0' }} C</div>
+  <div> Temp Min: {{ item.main.temp - 273.15 | number:'1.0-0' }} C</div>
+  <div> Temp Max: {{ item.main.temp - 273.15 | number:'1.0-0' }} C</div>
+</div>
